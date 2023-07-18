@@ -1,0 +1,51 @@
+{
+  "ts-node": {
+    "files": true,
+    "require": [
+      "tsconfig-paths/register"
+    ]
+  },
+  "compilerOptions": {
+    "baseUrl": "src",
+    "paths": {
+      "@utils/*": [
+        "utils/*"
+      ],
+      "@config/*": [
+        "config/*"
+      ],
+      "@middleware/*": [
+        "middleware/*"
+      ]
+    },
+    "declaration": false,
+    "declarationMap": false,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "inlineSources": false,
+    "lib": [
+      "es2022"
+    ],
+    "module": "NodeNext",
+    "moduleResolution": "node",
+    "noImplicitReturns": false,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "outDir": "./dist",
+    "resolveJsonModule": true,
+    "sourceMap": false,
+    "strict": true,
+    "target": "es2022",
+    "skipLibCheck": true
+  },
+  "include": [
+    "src/**/*",
+    "src/**/*.yml",
+    "@types/**/*.d.ts",
+    "pm2.config.js"
+  ],
+  "exclude": [
+    "node_modules",
+    "google-credentials.json"
+  ]
+}

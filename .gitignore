@@ -1,0 +1,11 @@
+.env
+dist
+node_modules
+logs
+.idea
+google-credentials.json
+api-candlelit.iml
+./google-credentials.json
+.initiate_db.sh
+src/environment.yml
+
